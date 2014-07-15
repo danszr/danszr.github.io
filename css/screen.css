@@ -61,13 +61,14 @@ table {
 }
 
 body {
-  font-family: Helvetica;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
   line-height: 21px;
 }
 
 a {
-  color: #800000;
+  color: black;
+  text-decoration: none;
 }
 
 p {
@@ -95,13 +96,15 @@ header {
 }
 
 .imgbkrnd, .lifecoaching, .careercoaching, .betterresumes, .findingcoach {
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-size: 100% 100%;
   text-align: center;
   margin-top: 10px;
   font-size: 30px;
   vertical-align: middle;
+  text-decoration: none;
+  border-bottom: 2px #CCC solid;
 }
 
 .lifecoaching {
@@ -122,8 +125,22 @@ header {
 
 .menu {
   display: none;
-  position: fixed;
-  top: 0px;
+}
+
+.menuclicked {
+  display: block;
+}
+
+.pure-menu {
+  text-align: center;
+}
+
+.fa-facebook-square {
+  color: #3B5999;
+}
+
+.fa-twitter {
+  color: #1AB2E8;
 }
 
 .icon {
@@ -136,12 +153,23 @@ header {
   right: 0;
 }
 
-@media screen and (min-width: 587px) {
+@media screen and (min-width: 596px) {
   .menu {
     display: block;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+  }
+
+  .pure-menu {
+    position: fixed;
   }
 
   .icon {
     display: none;
+  }
+
+  header {
+    margin-top: 40px;
   }
 }
