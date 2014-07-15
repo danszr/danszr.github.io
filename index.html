@@ -1,41 +1,74 @@
 <!doctype html>
 <html>
-<head>
-    <title>✽ ✽ ✽</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/reset.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all">
-</head>
-<body>
+    <head>
+        <title>Life Presents</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
+    </head>
+    <body>
 
-<div class="wrap">
-    <div class="content">
-        <div class="main">
-            <h1>My site</h1>
-            <p>
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-            </p>
-            <p>
-                Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
-            </p>
-            <p>
-                Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-        </div>
-        <div class="side">
-            <p>
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-            </p>
-            <p>
-                Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
-            </p>
-            <p>
-                Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-        </div>
+    <div class="wrap">
+           <div class = "menu" id="demo-horizontal-menu">
+                <ul id="std-menu-items">
+                    <li class="pure-menu-selected"><a href="#">Flickr</a></li>
+                    <li><a href="#">Messenger</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li>
+                        <a href="#">Other</a>
+                        <ul>
+                            <li class="pure-menu-heading">More from Yahoo!</li>
+                            <li class="pure-menu-separator"></li>
+                            <li><a href="#">Autos</a></li>
+                            <li><a href="#">Flickr</a></li>
+                            <li><a href="#">Answers</a></li>
+                            <li>
+                                <a href="#">Even More</a>
+                                <ul>
+                                    <li><a href="#">Horoscopes</a></li>
+                                    <li><a href="#">Games</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">OMG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <h1>My site</h1>
+                <p>
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                </p>
+                <p>
+                    Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                </p>
+                <p>
+                    Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </p>
+            </div>
     </div>
-</div>
+ 
+        <script>
+        YUI({
+              classNamePrefix: 'pure'
+        }).use('gallery-sm-menu', function (Y) {
+            var horizontalMenu = new Y.Menu({
+                container         : '#demo-horizontal-menu',
+                sourceNode        : '#std-menu-items',
+                orientation       : 'horizontal',
+                hideOnOutsideClick: false,
+                hideOnClick       : false
+            });
 
-</body>
+            horizontalMenu.render();
+            horizontalMenu.show();
+
+        });
+        </script>
+    </body>
 </html>

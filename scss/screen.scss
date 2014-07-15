@@ -3,7 +3,7 @@
 .wrap {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 20px;
+  padding: 20px;
   background: white;
 }
 
@@ -28,24 +28,10 @@ h1 {
   margin-bottom: .8em;
 }
 
-.content {
-  padding: 20px 0;
-  font-size: 0;
-}
-
-.main, .side {
-  display: inline-block;
-  vertical-align: top;
-}
 
 .main {
-  width: 65%;
+  width: 100%;
   margin-right: 5%;
   font-size: 16px;
 }
 
-.side {
-  width: 30%;
-  color: #666;
-  font-size: 14px;
-}
