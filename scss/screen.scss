@@ -4,15 +4,12 @@
   .wrap {
     margin: 0 auto;
     max-width: 1000px;
-    padding: 20px;
-    background: white;
   }
 
   body {
     font-family: Helvetica;
     font-size: 16px;
     line-height: 21px;
-    background: azure;
   }
 
   a {
@@ -27,32 +24,68 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: .8em;
+    display: inline-block;
     text-align: center;
   }
 
-
+ header{
+  text-align: center;
+  width: 100%;
+  background-color: peachpuff;
+ }
   .main {
     width: 100%;
     margin-right: 5%;
     font-size: 16px;
   }
-
-  .lifecoaching{
-    background-image: url('img/coach.jpg');
+  .imgbkrnd{
+    height: 400px;
     width: 100%;
-    height: 100%;
+    background-size: 100% 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  .lifecoaching{
+    @extend .imgbkrnd;
+    background-image: url('/img/career-change.jpg');
+  }
+  .careercoaching{
+    @extend .imgbkrnd;
+    background-image: url('/img/coach.jpg');
+  }  
+  .betterresumes{
+    @extend .imgbkrnd;
+    background-image: url('/img/lc_roadtrip_600.jpg');
+
+  }  
+  .findingcoach{
+    @extend .imgbkrnd;
+    background-image: url('/img/finding.jpg');
   }
   .menu{
     display: none;
+    position: fixed;
+    top: 0px;
   }
-
-
+  .icon{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 70px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
 
 @media screen and (min-width: 587px){
 
 .menu{
   display: block;
 }
-
+.icon{
+  display: none;
+}
 
 }

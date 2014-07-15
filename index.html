@@ -12,6 +12,7 @@
     <body>
 
     <div class="wrap">
+        
            <div class = "menu" id="demo-horizontal-menu">
                 <ul id="std-menu-items">
                     <li class="pure-menu-selected"><a href="#">Life Presents</a></li>
@@ -29,13 +30,16 @@
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
-            <div class="main">
+
+            <header>
                 <h1>Life Presents</h1>
-                <a href="#menu" id="menuLink" class="menu-link"> </a>
-                    <div class="lifecoaching"></div>
-                    <div class="careercoaching"></div>
-                    <div class="betterresumes"></div>
-                    <div class="findingcoach"></div>
+                <a class = "icon" href="#">☰</a>
+            </header>
+            <div class="main">   
+                    <div class="lifecoaching">Life Coaching</div>
+                    <div class="careercoaching">Career Coaching</div>
+                    <div class="betterresumes">Better Resumes</div>
+                    <div class="findingcoach">Finding a Coach</div>
             </div>
     </div>
  
@@ -55,6 +59,12 @@
             horizontalMenu.show();
 
         });
+
+        /*$function() {
+            $('a').click(function(){
+                $('menu').toggleClass('menuclicked');
+            });
+        });*/
         </script>
     </body>
 </html>
