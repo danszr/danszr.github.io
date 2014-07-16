@@ -51,15 +51,15 @@
   }
   .lifecoaching{
     @extend .imgbkrnd;
-    background-image: url('/img/career-change.jpg');
+    background-image: url('http://williamsinstitute.law.ucla.edu/wp-content/uploads/free.jpg');
   }
   .careercoaching{
     @extend .imgbkrnd;
-    background-image: url('/img/Career-Goals-1.gif');
+    background-image: url('http://www.csulbsam.org/wp-content/uploads/2012/01/Career-Goals-1.gif');
   }  
   .betterresumes{
     @extend .imgbkrnd;
-    background-image: url('/img/resume.jpg');
+    background-image: url('https://myoptimalcareer.com/blog/wp-content/themes/optimal/uploaded-images/iStock_000009310485Small.jpg');
   }  
   .menu{
     display: none;
@@ -106,7 +106,7 @@
   }
   .lifecoaching, .betterresumes{
     display: inline-block;
-    width: 50%;
+    width: 49.80%;
     margin: 0;
   }
 }
