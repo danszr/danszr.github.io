@@ -39,7 +39,7 @@
     font-size: 16px;
   }
   .imgbkrnd{
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-size: 100% 100%;
     text-align: center;
@@ -55,17 +55,12 @@
   }
   .careercoaching{
     @extend .imgbkrnd;
-    background-image: url('/img/coach.jpg');
+    background-image: url('/img/Career-Goals-1.gif');
   }  
   .betterresumes{
     @extend .imgbkrnd;
-    background-image: url('/img/lc_roadtrip_600.jpg');
-
+    background-image: url('/img/resume.jpg');
   }  
-  .findingcoach{
-    @extend .imgbkrnd;
-    background-image: url('/img/finding.jpg');
-  }
   .menu{
     display: none;
   }
@@ -85,7 +80,7 @@
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 70px;
+    font-size: 55px;
     position: absolute;
     top: 20px;
     right: 0;
@@ -108,5 +103,10 @@
   }
   header{
     margin-top: 40px;
+  }
+  .lifecoaching, .betterresumes{
+    display: inline-block;
+    width: 50%;
+    margin: 0;
   }
 }
