@@ -75,8 +75,8 @@
   .pure-menu{
     text-align: center;
   }
-  .fa-facebook-square{
-    color: #3B5999;
+  .fa-linkedin-square{
+    color: #007BB6;
   }
   .fa-twitter{
     color: #1AB2E8;
@@ -98,9 +98,10 @@
     position: fixed;
     top: 0px;
     text-align: center;
+    max-width: 1000px;
   }
   .pure-menu{
-    position: fixed;
+    
   }
   .icon{
     display: none;

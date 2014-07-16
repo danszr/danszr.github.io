@@ -135,8 +135,8 @@ header {
   text-align: center;
 }
 
-.fa-facebook-square {
-  color: #3B5999;
+.fa-linkedin-square {
+  color: #007BB6;
 }
 
 .fa-twitter {
@@ -159,10 +159,7 @@ header {
     position: fixed;
     top: 0px;
     text-align: center;
-  }
-
-  .pure-menu {
-    position: fixed;
+    max-width: 1000px;
   }
 
   .icon {
