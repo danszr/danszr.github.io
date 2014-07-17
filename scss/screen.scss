@@ -43,10 +43,12 @@
     width: 100%;
     background-size: 100% 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     vertical-align: middle;
     text-decoration: none;
-    border-bottom: 2px #CCC solid;
+    padding-top: 30px;
+    box-shadow: 3px 3px 3px #CCC;
+    color: #000080;
   }
   .lifecoaching{
     @extend .imgbkrnd;
@@ -84,7 +86,10 @@
     top: 20px;
     right: 0;
   }
-
+  .questions{
+      text-align: center;
+      border-bottom: 2px solid #DDD;
+    }
 @media screen and (min-width: 600px){
 
   .menu{
@@ -99,19 +104,21 @@
       font-size: 60px;
     }
   }
-  .icon{
-    display: none;
-  }
   header{
     display: none !important;
   }
   .main{
     margin-top: 80px;
-    width: 100%;
   }
   .lifecoaching, .betterresumes{
     display: inline-block;
     width: 49.80%;
     margin: 0;
+  }
+  .questions{
+    h1{
+      font-size: 30px;
+
+    }
   }
 }
