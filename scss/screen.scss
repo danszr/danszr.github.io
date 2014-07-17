@@ -27,7 +27,7 @@
     display: inline-block;
     text-align: center;
   }
-
+  
  header{
   text-align: center;
   width: 100%;
@@ -85,7 +85,7 @@
     right: 0;
   }
 
-@media screen and (min-width: 596px){
+@media screen and (min-width: 600px){
 
   .menu{
     display: block;
@@ -93,15 +93,21 @@
     top: 0px;
     text-align: center;
     max-width: 1000px;
-  }
-  .pure-menu{
-    
+
+      .business-title{
+      font-family: 'Lobster', cursive !important;
+      font-size: 60px;
+    }
   }
   .icon{
     display: none;
   }
   header{
-    margin-top: 40px;
+    display: none !important;
+  }
+  .main{
+    margin-top: 80px;
+    width: 100%;
   }
   .lifecoaching, .betterresumes{
     display: inline-block;
