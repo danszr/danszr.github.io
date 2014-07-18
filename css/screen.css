@@ -58,7 +58,6 @@ body {
   color: #72523A; }
 
 a {
-  color: black;
   text-decoration: none; }
 
 p {
@@ -71,17 +70,27 @@ h1 {
   display: inline-block;
   text-align: center; }
 
+.coach {
+  border-bottom: 2px solid #DDD; }
+
+h2, h3 {
+  font-weight: bold;
+  line-height: 30px; }
+
 header {
   text-align: center;
   width: 100%;
-  background-color: peachpuff; }
+  background-color: #E9F0BC;
+  color: #72523A; }
 
 .main {
   width: 100%;
   font-size: 16px;
   text-align: center;
-  margin-top: 100px;
-  border-bottom: 2px solid #DDD; }
+  margin: 100px 30px 30px 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #DDD;
+  line-height: 1.6em; }
 
 .imgbkrnd, .lifecoaching, .careercoaching, .betterresumes {
   height: 400px;
@@ -91,9 +100,10 @@ header {
   font-size: 50px;
   vertical-align: middle;
   text-decoration: none;
-  padding-top: 30px;
+  padding-top: 10px;
   box-shadow: 3px 3px 3px 3px #CCC;
-  color: #C8DC5C; }
+  color: #C8DC5C;
+  line-height: 1.5em; }
 
 .lifecoaching {
   background-image: url("http://williamsinstitute.law.ucla.edu/wp-content/uploads/free.jpg"); }
@@ -130,7 +140,6 @@ header {
 .icon {
   display: inline-block;
   text-decoration: none;
-  color: black;
   font-size: 55px;
   position: absolute;
   top: 20px;
@@ -154,7 +163,7 @@ header {
   display: block;
   margin: 20px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1008px) {
   .menu {
     display: block;
     position: fixed;
@@ -170,9 +179,6 @@ header {
     }*/
   header {
     display: none !important; }
-
-  .main {
-    margin-top: 80px; }
 
   .lifecoaching, .betterresumes {
     display: inline-block;
