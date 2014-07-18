@@ -117,8 +117,9 @@ header {
 .pure-menu {
   text-align: center; }
 
-blockquote {
-  margin-bottom: 50px; }
+.oscar-quote {
+  margin-bottom: 50px;
+  font-style: italic !important; }
 
 .fa-linkedin-square {
   color: #007BB6; }
