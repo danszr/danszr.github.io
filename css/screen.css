@@ -68,14 +68,15 @@ h1 {
   font-weight: bold;
   margin-bottom: .8em;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  color: #C8DC5C; }
 
 .coach {
   border-bottom: 2px solid #DDD; }
 
 h2, h3 {
   font-weight: bold;
-  line-height: 30px; }
+  line-height: 1.6em; }
 
 .head {
   text-align: center;
@@ -87,10 +88,10 @@ h2, h3 {
   width: 80%;
   font-size: 16px;
   text-align: center;
-  margin: 100px 30px 30px 30px;
   padding-bottom: 30px;
   border-bottom: 2px solid #DDD;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  margin: 0 30px; }
 
 .imgbkrnd, .lifecoaching, .careercoaching, .betterresumes {
   height: 400px;
@@ -176,7 +177,8 @@ h2, h3 {
       display: inline-block; }
 
   .main {
-    width: 100%; }
+    width: 100%;
+    margin: 100px 0 0 0; }
 
   /*.business-title{
       font-family: 'Lobster', cursive;
@@ -184,6 +186,24 @@ h2, h3 {
     }*/
   .head {
     display: none !important; }
+
+  .logo {
+    transition: all 500ms linear; }
+
+  .logo:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+  .imgbkrnd, .lifecoaching, .careercoaching, .betterresumes {
+    transition: all 500ms linear; }
+
+  .imgbkrnd:hover, .lifecoaching:hover, .careercoaching:hover, .betterresumes:hover {
+    -webkit-transform: scale(1.03, 1.01);
+    -moz-transform: scale(1.03, 1.01);
+    -ms-transform: scale(1.03, 1.01);
+    transform: scale(1.03, 1.01); }
 
   .lifecoaching, .betterresumes {
     display: inline-block;
