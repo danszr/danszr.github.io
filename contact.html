@@ -11,7 +11,7 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-
+        <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
  <script>
     YUI({
               classNamePrefix: 'pure'
@@ -36,6 +36,37 @@
             });
         });
         </script>
+        <script>
+        $(function() {
+            $('.pure-button').click(function(){
+                $('.confirm').addClass('confirm-clicked');
+            });
+        });
+        </script>
+        <script>
+            $(function() {
+                var myRootRef = new Firebase('https://flickering-fire-916.firebaseio.com/');
+                $('#contact-form').submit(function (evt) {
+                    evt.preventDefault();
+                    myRootRef.push({
+                      name: $("#name").val(),
+                      email:  $("#email").val(),
+                      phone: $("#phone").val(),
+                      message:  $("#message").val()
+                    });
+                   /* $.ajax({
+                        type: "POST",
+                        url: "http://tsljs.herokuapp.com/sandy",
+                        data: {
+                            name: $("#name").val(),
+                            email:  $("#email").val(),
+                            phone: $("#phone").val(),
+                            message:  $("#message").val()
+                        }
+                    });*/
+                });
+            });
+        </script>
     </head>
     <body>
 
@@ -58,7 +89,7 @@
             </header>
             <div class="main">
                 <h1 class = "contact">Contact</h1>
-                <form class="pure-form pure-form-aligned">
+                <form class="pure-form pure-form-aligned" id= "contact-form">
                     <fieldset>
                         <div class="pure-control-group">
                             <label for="name">Name</label>
@@ -78,6 +109,7 @@
                             <textarea id = "message" placeholder="Message" cols="30" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                        <div class = "confirm">Thank you! Wilma will get back to you as soon as she can.</div>
                     </fieldset>
                 </form>
             </div>
