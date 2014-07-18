@@ -8,7 +8,8 @@
 
   body {
     font-family: 'Merriweather', serif;    font-size: 16px;
-    line-height: 21px;
+    line-height: 22px;
+    color: #72523A;
   }
 
   a {
@@ -35,8 +36,9 @@
  }
   .main {
     width: 100%;
-    margin-right: 5%;
     font-size: 16px;
+    text-align: center;
+    margin: 50px 0 0 0;
   }
   .imgbkrnd{
     height: 400px;
@@ -47,8 +49,8 @@
     vertical-align: middle;
     text-decoration: none;
     padding-top: 30px;
-    box-shadow: 3px 3px 3px #CCC;
-    color: #000080;
+    box-shadow: 3px 3px 3px 3px #CCC;
+    color: #C8DC5C;
   }
   .lifecoaching{
     @extend .imgbkrnd;
@@ -67,9 +69,18 @@
   }
   .menuclicked{
     display: block;
+    ul li{
+      display: block;
+    }
+  }
+  .logo{
+    width: 90px;
   }
   .pure-menu{
     text-align: center;
+  }
+  blockquote{
+    margin-bottom: 50px;
   }
   .fa-linkedin-square{
     color: #007BB6;
@@ -89,7 +100,19 @@
   .questions{
       text-align: center;
       border-bottom: 2px solid #DDD;
+        h1{
+          font-size: 25px;
+          line-height: 35px;
+        }
+        p{
+          font-size: 15px;
+          line-height: 25px;
+        }
+        .head-q{
+          font-weight: bold;
+        }
     }
+
 @media screen and (min-width: 600px){
 
   .menu{
@@ -98,12 +121,14 @@
     top: 0px;
     text-align: center;
     max-width: 1000px;
-
-      .business-title{
+    ul li{
+      display: inline-block;
+    }
+  }
+  .business-title{
       font-family: 'Lobster', cursive !important;
       font-size: 60px;
     }
-  }
   header{
     display: none !important;
   }
@@ -118,7 +143,12 @@
   .questions{
     h1{
       font-size: 30px;
-
+      line-height: 40px;
     }
-  }
+    p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+}
+
 }
