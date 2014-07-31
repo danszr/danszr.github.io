@@ -109,13 +109,13 @@ h2, h3 {
   line-height: 1.5em; }
 
 .lifecoaching {
-  background-image: url("http://williamsinstitute.law.ucla.edu/wp-content/uploads/free.jpg"); }
+  background-image: url("../img/free.jpg"); }
 
 .careercoaching {
-  background-image: url("http://www.csulbsam.org/wp-content/uploads/2012/01/Career-Goals-1.gif"); }
+  background-image: url("../img/Career-Goals-1.gif"); }
 
 .betterresumes {
-  background-image: url("https://myoptimalcareer.com/blog/wp-content/themes/optimal/uploaded-images/iStock_000009310485Small.jpg"); }
+  background-image: url("../img/resume.jpg"); }
 
 .menu {
   display: none; }
@@ -137,7 +137,8 @@ h2, h3 {
   width: 40%;
   display: block;
   position: relative;
-  left: 30%; }
+  left: 30%;
+  margin: 2em 0; }
 
 .pure-menu {
   text-align: center; }
