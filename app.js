@@ -1,7 +1,7 @@
 $(function() {
 
 	// Get the form.
-	var form = $('#contact-form');
+	var form = $('#ajax-contact');
 
 	// Get the messages div.
 	var formMessages = $('#form-messages');
@@ -31,7 +31,6 @@ $(function() {
 			// Clear the form.
 			$('#name').val('');
 			$('#email').val('');
-			$('#phone').val('');
 			$('#message').val('');
 		})
 		.fail(function(data) {
