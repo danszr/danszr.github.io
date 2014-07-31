@@ -71,6 +71,9 @@ h1 {
   text-align: center;
   color: #C8DC5C; }
 
+ul {
+  padding: 0 !important; }
+
 .coach {
   border-bottom: 2px solid #DDD; }
 
