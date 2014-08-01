@@ -14,23 +14,6 @@
         <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
- <script>
-    YUI({
-              classNamePrefix: 'pure'
-        }).use('gallery-sm-menu', function (Y) {
-            var horizontalMenu = new Y.Menu({
-                container         : '#demo-horizontal-menu',
-                sourceNode        : '#std-menu-items',
-                orientation       : 'horizontal',
-                hideOnOutsideClick: false,
-                hideOnClick       : false
-            });
-
-            horizontalMenu.render();
-            horizontalMenu.show();
-
-        });
-        </script>
         <script>
         $(function() {
             $('.icon').click(function(){
@@ -58,7 +41,7 @@
                     });
                    /* $.ajax({
                         type: "POST",
-                        url: "http://tsljs.herokuapp.com/sandy",
+                        url: "http://tsljs.herokuapp.com/dan",
                         data: {
                             name: $("#name").val(),
                             email:  $("#email").val(),
@@ -74,14 +57,35 @@
 
         <div class="wrap">
         
-             <div class = "menu" id="demo-horizontal-menu">
+            <div class="pure-menu pure-menu-open pure-menu-horizontal head">
+                <ul>
+                    <li>
+                        <a href="/">
+                        <img class = "logo-mobile" src="img/logo.png" alt = "logo">
+                        </a>
+                    </li>
+                    <li><a  href="/">
+                            <h1>
+                                Life Presents
+                            </h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "icon" href="#">
+                            ☰
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pure-menu pure-menu-open pure-menu-horizontal menu">
                 <ul id="std-menu-items">
                     <li>
                         <a href="/">
-                            <img class = "logo" alt = "logo" src="img/logo.png">
+                            <img class = "logo" src="img/logo.png" alt = "logo">
                         </a>
                     </li>
-                    <li class="pure-menu-selected business-title">
+                    <li class="business-title">
                         <a href="/">
                             Life Presents
                         </a>
@@ -104,27 +108,6 @@
                     <li>
                         <a href="choosing-coach">
                             Choosing a Coach
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="pure-menu pure-menu-open pure-menu-horizontal head">
-                <ul>
-                    <li>
-                        <a href="/">
-                        <img class = "logo-mobile" src="img/logo.png" alt = "logo">
-                        </a>
-                    </li>
-                    <li><a  href="/">
-                            <h1>
-                                Life Presents
-                            </h1>
-                        </a>
-                    </li>
-                    <li>
-                        <a class = "icon" href="#">
-                            ☰
                         </a>
                     </li>
                 </ul>
@@ -190,7 +173,7 @@
                             About
                         </a>
                     </li>
-                    <li>
+                    <li class="pure-menu-selected">
                         <a href="contact">
                             Contact
                         </a>

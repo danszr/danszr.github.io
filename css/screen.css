@@ -121,7 +121,8 @@ h2, h3 {
   display: none; }
 
 .menuclicked {
-  display: block; }
+  display: block;
+  margin-bottom: 20px; }
   .menuclicked ul li {
     display: block; }
 
