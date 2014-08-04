@@ -26,8 +26,8 @@
     margin-bottom: .8em;
     display: inline-block;
     text-align: center;
+    line-height: 1.6em;
     color: #C8DC5C;
-
   }
   ul{
     padding: 0 !important;
@@ -42,9 +42,6 @@
  .head{
   text-align: center;
   width: 100%;
-  background-color: #E9F0BC;
-  color: #72523A;
-
  }
   .main {
     font-size: 16px;
@@ -64,20 +61,28 @@
     text-decoration: none;
     padding-top: 10px;
     box-shadow: 3px 3px 3px 3px #CCC;
-    color: #C8DC5C;
     line-height: 1.5em;
   }
   .lifecoaching{
     @extend .imgbkrnd;
     background-image: url('../img/free.jpg');
+    .overlay-text{
+      color: #C8DC5C;
+    }
   }
   .careercoaching{
     @extend .imgbkrnd;
     background-image: url('../img/Career-Goals-1.gif');
+    .overlay-text{
+      color: #72523A;
+    }
   }  
   .betterresumes{
     @extend .imgbkrnd;
     background-image: url('../img/resume.jpg');
+    .overlay-text{
+      color: #C8DC5C;
+    }
   }  
   .menu{
     display: none;
@@ -87,6 +92,9 @@
     margin-bottom: 20px;
     ul li{
       display: block;
+    }
+    .logolist,.business-title{
+      display: none;
     }
   }
   .logo{
@@ -120,6 +128,9 @@
     display: inline-block;
     text-decoration: none;
     font-size: 55px;
+    .fa-bars{
+      color: #72523A;
+    }
   }
   .questions{
       text-align: center;
@@ -142,7 +153,21 @@
       display: block;
       margin: 20px;
     }
-@media screen and (min-width: 1008px){
+    .business-title{
+      font-family: 'Lobster', cursive;
+      font-size: 30px;
+      color: #72523A;
+    }
+     h1.business-title{
+      letter-spacing: 3px;
+    }
+    li a div{
+      color: #72523A;
+    }
+    .pure-menu-selected a div{
+      color: #C8DC5C;
+    }
+@media screen and (min-width: 1013px){
 
   .menu{
     display: block;
@@ -158,10 +183,6 @@
     width: 100%;
     margin: 100px 0 0 0;
   }
-  /*.business-title{
-      font-family: 'Lobster', cursive;
-      font-size: 60px;
-    }*/
   .head{
     display: none !important;
   }
@@ -199,5 +220,10 @@
       line-height: 30px;
     }
 }
+
+}
+@media screen and (max-width: 440px){
+  
+  
 
 }

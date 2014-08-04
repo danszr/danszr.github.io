@@ -69,6 +69,7 @@ h1 {
   margin-bottom: .8em;
   display: inline-block;
   text-align: center;
+  line-height: 1.6em;
   color: #C8DC5C; }
 
 ul {
@@ -83,9 +84,7 @@ h2, h3 {
 
 .head {
   text-align: center;
-  width: 100%;
-  background-color: #E9F0BC;
-  color: #72523A; }
+  width: 100%; }
 
 .main {
   font-size: 16px;
@@ -105,17 +104,22 @@ h2, h3 {
   text-decoration: none;
   padding-top: 10px;
   box-shadow: 3px 3px 3px 3px #CCC;
-  color: #C8DC5C;
   line-height: 1.5em; }
 
 .lifecoaching {
   background-image: url("../img/free.jpg"); }
+  .lifecoaching .overlay-text {
+    color: #C8DC5C; }
 
 .careercoaching {
   background-image: url("../img/Career-Goals-1.gif"); }
+  .careercoaching .overlay-text {
+    color: #72523A; }
 
 .betterresumes {
   background-image: url("../img/resume.jpg"); }
+  .betterresumes .overlay-text {
+    color: #C8DC5C; }
 
 .menu {
   display: none; }
@@ -125,6 +129,8 @@ h2, h3 {
   margin-bottom: 20px; }
   .menuclicked ul li {
     display: block; }
+  .menuclicked .logolist, .menuclicked .business-title {
+    display: none; }
 
 .logo {
   width: 90px; }
@@ -157,6 +163,8 @@ h2, h3 {
   display: inline-block;
   text-decoration: none;
   font-size: 55px; }
+  .icon .fa-bars {
+    color: #72523A; }
 
 .questions {
   text-align: center; }
@@ -176,7 +184,21 @@ h2, h3 {
   display: block;
   margin: 20px; }
 
-@media screen and (min-width: 1008px) {
+.business-title {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  color: #72523A; }
+
+h1.business-title {
+  letter-spacing: 3px; }
+
+li a div {
+  color: #72523A; }
+
+.pure-menu-selected a div {
+  color: #C8DC5C; }
+
+@media screen and (min-width: 1013px) {
   .menu {
     display: block;
     position: fixed;
@@ -190,10 +212,6 @@ h2, h3 {
     width: 100%;
     margin: 100px 0 0 0; }
 
-  /*.business-title{
-      font-family: 'Lobster', cursive;
-      font-size: 60px;
-    }*/
   .head {
     display: none !important; }
 
