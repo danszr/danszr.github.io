@@ -42,7 +42,20 @@
  .head{
   text-align: center;
   width: 100%;
+  ul{
+    width: 100%;
+
+    .logo-list{
+      position: absolute;
+      left: 0;
+    }
+    .menu-list{
+      position: absolute;
+      right: 0;
+    }
+  }
  }
+
   .main {
     font-size: 16px;
     text-align: center;
@@ -101,9 +114,7 @@
     width: 90px;
   }
   .logo-mobile{
-    width: 70px;
-    margin-right: 30px;
-    margin: 0;
+    width: 90px;
   }
   .wilma{
     width: 40%;
@@ -222,8 +233,7 @@
 }
 
 }
-@media screen and (max-width: 440px){
+@media screen and (max-width: 500px){
   
-  
-
+ 
 }
