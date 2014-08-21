@@ -42,7 +42,9 @@
                       message:  $("#message").val()
                     });
 
-                   $.ajax({
+                $("#contact-form").get(0).reset();
+
+                $.ajax({
                       type: "POST",
                       url: "https://mandrillapp.com/api/1.0/messages/send.json",
                       data: {
@@ -147,7 +149,6 @@
                 <h1 class = "contact">
                     Contact
                 </h1>
-                <div id="form-messages"></div>
                 <form class="pure-form pure-form-aligned" id= "contact-form" method="post">
                     <fieldset>
                         <div class="pure-control-group field">
