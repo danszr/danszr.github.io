@@ -14,8 +14,8 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="img/logo.png">
         <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
-        <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-        <script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src='https://cdn.firebase.com/js/client/1.0.19/firebase.js'></script>
         <script>
         $(function() {
             $('.icon').click(function(){
@@ -41,16 +41,34 @@
                       phone: $("#phone").val(),
                       message:  $("#message").val()
                     });
-                   /* $.ajax({
-                        type: "POST",
-                        url: "http://tsljs.herokuapp.com/dan",
-                        data: {
-                            name: $("#name").val(),
-                            email:  $("#email").val(),
-                            phone: $("#phone").val(),
-                            message:  $("#message").val()
+
+                   $.ajax({
+                      type: "POST",
+                      url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                      data: {
+                        'key': 'Nf0e4MT_tFyq8DwHLXyVgQ',
+                        'message': {
+                          'from_email': $("#email").val(),
+                          'to': [
+                              {
+                                'email': 'dselzer@optonline.net',
+                                'name': 'dan',
+                                'type': 'to'
+                              },
+                              {
+                                'email': 'nachsin@comcast.net',
+                                'name': 'Wilma',
+                                'type': 'to'
+                              }
+                            ],
+                          'autotext': 'true',
+                          'subject': 'Life Presents Contact',
+                          'html': $("#name").val() + '<br>' + $("#email").val() + '<br>' + $("#phone").val() + '<br><br>' + $("#message").val()
                         }
-                    });*/
+                      }
+                     }).done(function(response) {
+                       console.log(response); // if you're into that sorta thing
+                    });
                 });
             });
         </script>
@@ -130,7 +148,7 @@
                     Contact
                 </h1>
                 <div id="form-messages"></div>
-                <form class="pure-form pure-form-aligned" id= "contact-form" method="post" action="mailer.php">
+                <form class="pure-form pure-form-aligned" id= "contact-form" method="post">
                     <fieldset>
                         <div class="pure-control-group field">
                             <input id="name" type="text" placeholder="Name" name="name" required>
