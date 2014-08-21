@@ -42,35 +42,36 @@
                       message:  $("#message").val()
                     });
 
-                $("#contact-form").get(0).reset();
+                    $.ajax({
+                          type: "POST",
+                          url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                          data: {
+                            'key': 'Nf0e4MT_tFyq8DwHLXyVgQ',
+                            'message': {
+                              'from_email': $("#email").val(),
+                              'to': [
+                                  {
+                                    'email': 'dselzer@optonline.net',
+                                    'name': 'dan',
+                                    'type': 'to'
+                                  },
+                                  {
+                                    'email': 'nachsin@comcast.net',
+                                    'name': 'Wilma',
+                                    'type': 'to'
+                                  }
+                                ],
+                              'autotext': 'true',
+                              'subject': 'Life Presents Contact',
+                              'html': $("#name").val() + '<br>' + $("#email").val() + '<br>' + $("#phone").val() + '<br><br>' + $("#message").val()
+                            }
+                          }
+                         }).done(function(response) {
+                           console.log(response); // if you're into that sorta thing
+                        });
 
-                $.ajax({
-                      type: "POST",
-                      url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                      data: {
-                        'key': 'Nf0e4MT_tFyq8DwHLXyVgQ',
-                        'message': {
-                          'from_email': $("#email").val(),
-                          'to': [
-                              {
-                                'email': 'dselzer@optonline.net',
-                                'name': 'dan',
-                                'type': 'to'
-                              },
-                              {
-                                'email': 'nachsin@comcast.net',
-                                'name': 'Wilma',
-                                'type': 'to'
-                              }
-                            ],
-                          'autotext': 'true',
-                          'subject': 'Life Presents Contact',
-                          'html': $("#name").val() + '<br>' + $("#email").val() + '<br>' + $("#phone").val() + '<br><br>' + $("#message").val()
-                        }
-                      }
-                     }).done(function(response) {
-                       console.log(response); // if you're into that sorta thing
-                    });
+                    $("#contact-form").get(0).reset();
+
                 });
             });
         </script>
