@@ -266,3 +266,9 @@ li a div {
 
   .logo-mobile {
     display: none; } }
+@media screen and (max-width: 330px) {
+  .menuclicked .business-title {
+    display: block; }
+
+  .title-list a .business-title {
+    display: none; } }
