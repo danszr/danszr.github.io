@@ -117,19 +117,19 @@ h2, h3 {
   line-height: 1.5em; }
 
 .lifecoaching {
-  background-image: url("../img/free.jpg"); }
+  background-image: url("../img/4.jpg"); }
   .lifecoaching .overlay-text {
     color: #C8DC5C; }
 
 .careercoaching {
-  background-image: url("../img/Career-Goals-1.gif"); }
+  background-image: url("../img/7.jpg"); }
   .careercoaching .overlay-text {
-    color: #72523A; }
+    color: #C8DC5C; }
 
 .betterresumes {
-  background-image: url("../img/resume.jpg"); }
+  background-image: url("../img/5.jpg"); }
   .betterresumes .overlay-text {
-    color: #72523A; }
+    color: #C8DC5C; }
 
 .menu {
   display: none; }
