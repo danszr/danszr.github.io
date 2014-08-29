@@ -114,7 +114,8 @@ h2, h3 {
   text-decoration: none;
   padding-top: 10px;
   box-shadow: 3px 3px 3px 3px #CCC;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-weight: 900; }
 
 .lifecoaching {
   background-image: url("../img/4.jpg"); }
